@@ -1,1 +1,552 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags (A to Z) with keywords -->
+  <title>Pan Card Resizer - Instantly Resize photo & signature for PAN card using our free online tool.</title>
+  <meta name="description"
+    content="Pan card resizer tool: resize your photo to 213x213 px (300 DPI) and signature to 400x200 px (600 DPI). Pan card photo resize, pan card photo size, pan resize - all in one free tool.">
+  <meta name="keywords"
+    content="pan card resizer, pan card photo resize, pan resize, pan card photo size, pan card resize, pan card signature resize, 213x213 photo, 400x200 signature">
+  <meta name="author" content="pancardresizer.cc">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 day">
+  <link rel="canonical" href="https://pancardresizer.cc">
+
+  <!-- Open Graph / Facebook / WhatsApp (keywords integrated) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pancardresizer.cc">
+  <meta property="og:title" content="Pan Card Resizer — exact photo & signature dimensions">
+  <meta property="og:description"
+    content="Pan card resizer: Instantly Resize photo & signature for PAN card using our free online tool.">
+  <meta property="og:image" content="https://pancardresizer.cc/og-preview.jpg">
+  <meta property="og:site_name" content="pancardresizer.cc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pan Card Resizer — pan card photo resize & signature tool">
+  <meta name="twitter:description"
+    content="Pan resize tool: get correct pan card photo size 213x213 and signature 400x200. Free pan card resizer online.">
+  <meta name="twitter:image" content="https://pancardresizer.cc/twitter-preview.jpg">
+
+  <!-- Favicon and theme -->
+  <link rel="icon" type="image/png"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23256'%3E%3Crect width='100' height='100' rx='20' /%3E%3Ctext x='18' y='70' font-size='70' fill='white'%3E🪪%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#1e3a8a">
+
+  <!-- Schema.org JSON-LD with keyword-rich descriptions -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pan Card Resizer",
+    "url": "https://pancardresizer.cc",
+    "description": "Free pan card resizer to resize photo and signature. Instantly Resize photo & signature for PAN card using our free online tool.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pancardresizer.cc/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pan Card Resizer",
+    "url": "https://pancardresizer.cc",
+    "logo": "https://pancardresizer.cc/logo.png",
+    "description": "Free pan card resizer to resize photo and signature. Instantly Resize photo & signature for PAN card using our free online tool.",
+    "sameAs": [
+      "https://twitter.com/pancardresizer",
+      "https://facebook.com/pancardresizer"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the exact pan card photo size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The correct pan card photo size is 213x213 pixels at 300 DPI. Use our pan card resizer to get it instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to do pan card photo resize online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With our pan card resizer, upload your photo and download the exact pan card photo size 213x213. It's free and private."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the pan card signature size?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pan card signature must be 400x200 pixels at 600 DPI. This pan resize tool sets it automatically."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .loader {
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid #1e3a8a;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- NAVIGATION (desktop + mobile) with keyword in brand -->
+  <nav class="bg-white shadow-sm sticky top-0 z-30 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- brand with primary keyword -->
+        <a href="#" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-indigo-900">🪪 <span class="text-blue-600">PanCardResizer</span></span>
+        </a>
+
+        <!-- desktop menu -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#convert" class="text-gray-700 hover:text-indigo-800 transition">Convert</a>
+          <a href="#howto" class="text-gray-700 hover:text-indigo-800 transition">How to use</a>
+          <a href="#whyus" class="text-gray-700 hover:text-indigo-800 transition">Why us</a>
+          <a href="#faq" class="text-gray-700 hover:text-indigo-800 transition">FAQ</a>
+        </div>
+
+        <!-- mobile hamburger -->
+        <div class="md:hidden relative">
+          <button id="menuBtn" class="p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <div id="mobileMenu"
+            class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 hidden py-2 z-50">
+            <a href="#convert" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Convert</a>
+            <a href="#howto" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">How to use</a>
+            <a href="#whyus" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">Why us</a>
+            <a href="#faq" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+
+    <!-- CONVERT SECTION - keyword-rich headings (pan card resizer, pan card photo size, pan resize) -->
+    <section id="convert" class="scroll-mt-20">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-2"><span class="text-indigo-800">Pan Card
+          Resizer</span></h1>
+      <p class="text-gray-500 text-lg mb-4"><strong>Pan card photo resize </strong>Instantly Resize photo & signature
+        for PAN card using our free online tool. <br> Our <strong>pan card resizer</strong> works in your browser.</p>
+      <p class="text-gray-500 text-sm mb-8">Need a <strong>pan resize</strong> for your PAN application? Use the tool
+        below. It's the ultimate <strong>pan card resize</strong> tool online.</p>
+
+      <!-- two card grid -->
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Photo Resize (PAN photo 213x213) - keyword injected -->
+        <div class="bg-white/80 border-2 border-indigo-100 rounded-2xl shadow-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <!-- <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">PHOTO (213x213)</span> -->
+            <h2 class="text-xl font-semibold">Pan Card Photo Resize</h2>
+          </div>
+          <div class="space-y-4">
+            <div
+              class="border-2 border-dashed border-gray-200 rounded-xl p-4 text-center hover:border-indigo-300 transition">
+              <input type="file" id="photoInput" accept="image/*" class="hidden" />
+              <button id="photoChooseBtn"
+                class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-5 rounded-full text-sm transition">Choose
+                Photo</button>
+              <span id="photoFileName" class="text-sm text-gray-500 ml-2">No file chosen</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 items-center">
+              <div>
+                <label class="block text-xs text-gray-500 mb-1">Width (px)</label>
+                <input type="number" id="photoWidth" value="213"
+                  class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-indigo-200" />
+              </div>
+              <div>
+                <label class="block text-xs text-gray-500 mb-1">Height (px)</label>
+                <input type="number" id="photoHeight" value="213"
+                  class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-indigo-200" />
+              </div>
+              <div>
+                <label class="block text-xs text-gray-500 mb-1">DPI</label>
+                <input type="number" id="photoDpi" value="300"
+                  class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-indigo-200" />
+              </div>
+            </div>
+
+            <div class="bg-indigo-50/70 rounded-xl p-4 border border-indigo-200">
+              <div class="flex justify-between items-center text-sm">
+                <span class="font-medium text-gray-700">Result (<strong>pan card photo size</strong>)</span>
+                <span class="text-xs text-gray-400">213x213 @300</span>
+              </div>
+              <div class="flex gap-4 mt-1 text-sm">
+                <span>Width <span id="photoResultWidth" class="font-mono font-semibold">213</span> px</span>
+                <span>Height <span id="photoResultHeight" class="font-mono font-semibold">213</span> px</span>
+                <span>DPI <span id="photoResultDpi" class="font-mono font-semibold">300</span></span>
+              </div>
+            </div>
+
+            <button id="downloadPhotoBtn"
+              class="w-full bg-indigo-800 hover:bg-indigo-900 text-white font-medium py-3 rounded-xl shadow-sm transition flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Photo
+            </button>
+            <p class="text-xs text-gray-400 text-center">Perfect <strong>pan card photo size</strong> for your
+              application.</p>
+          </div>
+        </div>
+
+        <!-- Signature Resize (PAN signature 400x200) - keyword -->
+        <div class="bg-white/80 border-2 border-amber-100 rounded-2xl shadow-lg p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <!-- <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">SIGNATURE (400x200)</span> -->
+            <h2 class="text-xl font-semibold">Pan Card Signature Resize</h2>
+          </div>
+          <div class="space-y-4">
+            <div
+              class="border-2 border-dashed border-gray-200 rounded-xl p-4 text-center hover:border-amber-300 transition">
+              <input type="file" id="signatureInput" accept="image/*" class="hidden" />
+              <button id="signatureChooseBtn"
+                class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-2 px-5 rounded-full text-sm transition">Choose
+                Signature</button>
+              <span id="signatureFileName" class="text-sm text-gray-500 ml-2">No file chosen</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 items-center">
+              <div><label class="block text-xs text-gray-500 mb-1">Width (px)</label><input type="number"
+                  id="signatureWidth" value="400" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm" />
+              </div>
+              <div><label class="block text-xs text-gray-500 mb-1">Height (px)</label><input type="number"
+                  id="signatureHeight" value="200" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm" />
+              </div>
+              <div><label class="block text-xs text-gray-500 mb-1">DPI</label><input type="number" id="signatureDpi"
+                  value="600" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm" /></div>
+            </div>
+
+            <div class="bg-amber-50/70 rounded-xl p-4 border border-amber-200">
+              <div class="flex justify-between items-center text-sm"><span class="font-medium text-gray-700">Result
+                  (<strong>pan resize signature</strong>)</span><span class="text-xs text-gray-400">400x200 @600</span>
+              </div>
+              <div class="flex gap-4 mt-1 text-sm">
+                <span>Width <span id="signatureResultWidth" class="font-mono font-semibold">400</span> px</span>
+                <span>Height <span id="signatureResultHeight" class="font-mono font-semibold">200</span> px</span>
+                <span>DPI <span id="signatureResultDpi" class="font-mono font-semibold">600</span></span>
+              </div>
+            </div>
+
+            <button id="downloadSignatureBtn"
+              class="w-full bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 rounded-xl shadow-sm transition flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Download Signature
+            </button>
+            <p class="text-xs text-gray-400 text-center"><strong>Pan card resizer</strong> also handles signature
+              dimensions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO USE section - keywords embedded -->
+    <section id="howto" class="scroll-mt-20 mt-20">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">How to use<span class="text-indigo-800"> pan card resizer</span>
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><span
+            class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-800 font-bold text-lg mb-3">1</span>
+          <h3 class="font-semibold text-lg">Upload for pan card photo resize</h3>
+          <p class="text-gray-500">Choose your photo - our <strong>pan card resizer</strong> will prepare it.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><span
+            class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-800 font-bold text-lg mb-3">2</span>
+          <h3 class="font-semibold text-lg">Preset pan card photo size</h3>
+          <p class="text-gray-500">213x213 px for photo, 400x200 for signature - the exact <strong>pan card photo
+              size</strong> you need.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"><span
+            class="bg-indigo-100 w-10 h-10 rounded-full flex items-center justify-center text-indigo-800 font-bold text-lg mb-3">3</span>
+          <h3 class="font-semibold text-lg">Download pan resize result</h3>
+          <p class="text-gray-500">Click download and get your <strong>pan card resize</strong> image ready to attach.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US - keyword repetition -->
+    <section id="whyus" class="scroll-mt-20 mt-20 bg-gradient-to-br from-indigo-50 to-blue-50/30 p-8 rounded-3xl">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">Why <span class="text-indigo-800">pan card resizer</span> is
+        best</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-6">
+        <div class="bg-white/80 p-5 rounded-xl shadow-sm">
+          <div class="text-2xl mb-2">⚡</div>
+          <h3 class="font-semibold">Instant pan card photo resize</h3>
+          <p class="text-sm text-gray-500">No waiting, your <strong>pan card photo size</strong> is generated locally.
+          </p>
+        </div>
+        <div class="bg-white/80 p-5 rounded-xl shadow-sm">
+          <div class="text-2xl mb-2">🔒</div>
+          <h3 class="font-semibold">Private pan resize</h3>
+          <p class="text-sm text-gray-500">Your image never leaves your device. Safe <strong>pan card resizer</strong>.
+          </p>
+        </div>
+        <div class="bg-white/80 p-5 rounded-xl shadow-sm">
+          <div class="text-2xl mb-2">🖼️</div>
+          <h3 class="font-semibold">Exact pan card photo size</h3>
+          <p class="text-sm text-gray-500">213x213 @300 DPI - we nailed the <strong>pan card photo size</strong>.</p>
+        </div>
+        <div class="bg-white/80 p-5 rounded-xl shadow-sm">
+          <div class="text-2xl mb-2">📱</div>
+          <h3 class="font-semibold">Pan resize on any device</h3>
+          <p class="text-sm text-gray-500">Use this <strong>pan card resizer</strong> on mobile, tablet, or desktop.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section - rich with keywords -->
+    <section id="faq" class="scroll-mt-20 mt-20">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2"><span class="text-indigo-800">Pan card resizer</span> FAQ</h2>
+      <div class="space-y-4 mt-6 max-w-6xl">
+        <details class="bg-white border border-gray-200 rounded-xl p-5 open:bg-indigo-50 transition">
+          <summary class="font-semibold text-lg cursor-pointer">What is the correct pan card photo size?</summary>
+          <p class="mt-3 text-gray-600">The official <strong>pan card photo size</strong> is 213x213 pixels at 300 DPI.
+            Use our <strong>pan card resizer</strong> to get it exactly.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-5">
+          <summary class="font-semibold text-lg cursor-pointer">How to do pan card photo resize online?</summary>
+          <p class="mt-3 text-gray-600">Simply upload your photo to this <strong>pan card resizer</strong>. It will
+            perform <strong>pan card photo resize</strong> to 213x213 automatically.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-5">
+          <summary class="font-semibold text-lg cursor-pointer">Is pan resize for signature also available?</summary>
+          <p class="mt-3 text-gray-600">Yes, our <strong>pan card resizer</strong> handles both. Signature <strong>pan
+              resize</strong> gives you 400x200 at 600 DPI.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-5">
+          <summary class="font-semibold text-lg cursor-pointer">Do you store my images during pan card resize?</summary>
+          <p class="mt-3 text-gray-600">No, this <strong>pan card resizer</strong> works 100% in your browser. Your
+            photos remain private.</p>
+        </details>
+        <details class="bg-white border border-gray-200 rounded-xl p-5">
+          <summary class="font-semibold text-lg cursor-pointer">Is this pan card photo size tool free?</summary>
+          <p class="mt-3 text-gray-600">Absolutely free. No sign-up, no watermark. Just <strong>pan card photo
+              resize</strong> for free.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (keywords naturally placed) -->
+  <footer class="bg-white border-t border-gray-200 mt-20 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <span class="text-2xl font-bold text-indigo-900">🪪 PanCardResizer</span>
+        <p class="text-gray-500 mt-2 pr-4">The ultimate <strong>pan card resizer</strong> for photo and signature. Get
+          correct <strong>pan card photo size</strong> 213x213 and <strong>pan resize</strong> for signature 400x200.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-3">Tool</h4>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="#convert" class="hover:text-indigo-800"><strong>Pan card photo resize</strong> (213x213)</a></li>
+          <li><a href="#convert" class="hover:text-indigo-800"><strong>Pan resize</strong> signature (400x200)</a></li>
+          <li><a href="#howto" class="hover:text-indigo-800">How to use pan card resizer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-3">Info</h4>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="#" class="hover:text-indigo-800">About pan card photo size</a></li>
+          <li><a href="#" class="hover:text-indigo-800">Privacy (pan card resizer)</a></li>
+          <li><a href="#" class="hover:text-indigo-800">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-3">Connect</h4>
+        <ul class="space-y-2 text-gray-500">
+          <li><a href="#" class="hover:text-indigo-800">contact@pancardresizer.cc</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-gray-100 text-center text-gray-400 text-xs">
+      © 2026 <strong>pancardresizer.cc</strong> — The #1 <strong>pan card resizer</strong>. All rights reserved. Exact
+      <strong>pan card photo size</strong> 213x213 and <strong>pan resize</strong> signature 400x200.
+    </div>
+  </footer>
+
+  <!-- JavaScript (same robust logic, no changes needed) -->
+  <script>
+    (function () {
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mobileMenu.classList.toggle('hidden');
+        });
+        document.addEventListener('click', (event) => {
+          if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      }
+
+      const photoWidthInp = document.getElementById('photoWidth');
+      const photoHeightInp = document.getElementById('photoHeight');
+      const photoDpiInp = document.getElementById('photoDpi');
+      const photoResW = document.getElementById('photoResultWidth');
+      const photoResH = document.getElementById('photoResultHeight');
+      const photoResDpi = document.getElementById('photoResultDpi');
+      function updatePhotoResult() {
+        photoResW.innerText = photoWidthInp.value;
+        photoResH.innerText = photoHeightInp.value;
+        photoResDpi.innerText = photoDpiInp.value;
+      }
+      [photoWidthInp, photoHeightInp, photoDpiInp].forEach(el => el.addEventListener('input', updatePhotoResult));
+      updatePhotoResult();
+
+      const sigWidth = document.getElementById('signatureWidth');
+      const sigHeight = document.getElementById('signatureHeight');
+      const sigDpi = document.getElementById('signatureDpi');
+      const sigResW = document.getElementById('signatureResultWidth');
+      const sigResH = document.getElementById('signatureResultHeight');
+      const sigResDpi = document.getElementById('signatureResultDpi');
+      function updateSignatureResult() {
+        sigResW.innerText = sigWidth.value;
+        sigResH.innerText = sigHeight.value;
+        sigResDpi.innerText = sigDpi.value;
+      }
+      [sigWidth, sigHeight, sigDpi].forEach(el => el.addEventListener('input', updateSignatureResult));
+      updateSignatureResult();
+
+      function resizeImage(file, targetWidth, targetHeight) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = targetWidth;
+            canvas.height = targetHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+            canvas.toBlob((blob) => {
+              if (!blob) return reject('Canvas to blob failed');
+              const url = URL.createObjectURL(blob);
+              resolve({ blob, url, width: targetWidth, height: targetHeight });
+            }, 'image/png');
+          };
+          img.onerror = reject;
+          img.src = URL.createObjectURL(file);
+        });
+      }
+
+      function setupDownload(btnId, fileInputId, widthInput, heightInput, dpiInput, baseFilename) {
+        const btn = document.getElementById(btnId);
+        const fileInput = document.getElementById(fileInputId);
+        const chooseBtn = document.getElementById(btnId === 'downloadPhotoBtn' ? 'photoChooseBtn' : 'signatureChooseBtn');
+        const fileNameSpan = document.getElementById(btnId === 'downloadPhotoBtn' ? 'photoFileName' : 'signatureFileName');
+
+        if (chooseBtn) {
+          chooseBtn.addEventListener('click', () => fileInput.click());
+        }
+        fileInput.addEventListener('change', (e) => {
+          fileNameSpan.innerText = fileInput.files.length ? fileInput.files[0].name : 'No file chosen';
+        });
+
+        btn.addEventListener('click', async () => {
+          const file = fileInput.files[0];
+          if (!file) {
+            alert('Please select an image first.');
+            return;
+          }
+          const w = parseInt(widthInput.value, 10);
+          const h = parseInt(heightInput.value, 10);
+          const dpi = parseInt(dpiInput.value, 10);
+          if (isNaN(w) || w <= 0 || isNaN(h) || h <= 0) {
+            alert('Width and height must be positive numbers');
+            return;
+          }
+
+          const originalText = btn.innerHTML;
+          btn.innerHTML = '<span class="loader mr-2"></span>Resizing...';
+          btn.disabled = true;
+
+          try {
+            const { url, width, height } = await resizeImage(file, w, h);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${baseFilename}_${width}x${height}_${dpi}dpi.png`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 100);
+          } catch (err) {
+            alert('Resize failed: ' + err.message);
+          } finally {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+          }
+        });
+      }
+
+      setupDownload('downloadPhotoBtn', 'photoInput', photoWidthInp, photoHeightInp, photoDpiInp, 'PAN_photo');
+      setupDownload('downloadSignatureBtn', 'signatureInput', sigWidth, sigHeight, sigDpi, 'PAN_signature');
+    })();
+  </script>
+</body>
+
+</html>
