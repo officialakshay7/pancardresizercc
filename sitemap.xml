@@ -9,7 +9,18 @@
 
 <url>
   <loc>https://pancardresizer.cc/</loc>
-  <lastmod>2026-02-23T03:27:40+00:00</lastmod>
+  <lastmod>2026-02-24T11:00:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://pancardresizer.cc/privacy</loc>
+  <lastmod>2026-02-24T11:00:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pancardresizer.cc/terms</loc>
+  <lastmod>2026-02-24T11:00:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
