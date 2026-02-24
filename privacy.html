@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) - same as main site -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8Z3F2Y6NL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8Z3F2Y6NL');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy & Security - Pan Card Resizer</title>
+  <meta name="description" content="Pan Card Resizer privacy: we never upload, store, or see your images. All resizing happens locally in your browser. No tracking, no data collection.">
+  <meta name="keywords" content="pan card resizer privacy, pan card photo resize private, secure pan resize, no upload pan card tool">
+  <meta name="author" content="pancardresizer.cc">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pancardresizer.cc/privacy">
+
+  <!-- Open Graph / privacy -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pancardresizer.cc/privacy">
+  <meta property="og:title" content="Privacy · Pan Card Resizer">
+  <meta property="og:description" content="Your images stay on your device. Zero upload, zero storage. Read our one-page privacy promise.">
+  <meta property="og:image" content="https://pancardresizer.cc/og-privacy.jpg">
+  <meta property="og:site_name" content="pancardresizer.cc">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy - Pan Card Resizer">
+  <meta name="twitter:description" content="No servers, no uploads. Your photo and signature never leave your browser.">
+
+  <!-- favicon (same) -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%230f172a'%3E%3Crect width='100' height='100' rx='20' /%3E%3Ctext x='18' y='70' font-size='70' fill='white'%3E🪪%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Tailwind + Inter (same as main) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', system-ui, sans-serif; }
+    .card-hover { transition: all 0.15s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 12px 25px -8px rgba(0,0,0,0.1); }
+    .nav-link { transition: color 0.1s; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- same navigation (slightly adapted to highlight we're on privacy subpage) -->
+  <nav class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-30 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="index" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-slate-900">🪪 <span class="text-indigo-700">PanCardResizer</span></span>
+        </a>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index#convert" class="text-slate-600 hover:text-indigo-800 transition">Converter</a>
+          <a href="index#howto" class="text-slate-600 hover:text-indigo-800 transition">Guide</a>
+          <a href="index#whyus" class="text-slate-600 hover:text-indigo-800 transition">Advantages</a>
+          <a href="index#faq" class="text-slate-600 hover:text-indigo-800 transition">Q&A</a>
+        </div>
+        <div class="md:hidden relative">
+          <button id="menuBtn" class="p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+          <div id="mobileMenu" class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-100 hidden py-2 z-50">
+            <a href="index#convert" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Converter</a>
+            <a href="index#howto" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Guide</a>
+            <a href="index#whyus" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Advantages</a>
+            <a href="index#faq" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Q&A</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+
+    <!-- heading with rewritten privacy messaging -->
+    <div class="mb-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-3">🔒 <span class="text-indigo-700">Privacy & Security</span></h1>
+      <p class="text-slate-500 text-lg max-w-2xl">Your <strong>pan card photo resize</strong> happens <span class="bg-indigo-50 px-2 py-1 rounded-full text-indigo-800 text-sm font-medium">100% offline</span> - we don’t collect, store, or even see your images.</p>
+    </div>
+
+    <!-- main privacy explainer - entirely custom, fresh text -->
+    <div class="bg-white border border-slate-200 rounded-3xl shadow-md p-8 md:p-10 space-y-8">
+
+      <!-- zero upload badge row -->
+      <div class="flex flex-wrap gap-4 items-center justify-start border-b border-slate-100 pb-6">
+        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-1"><span class="text-lg">📁</span> No file upload</span>
+        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-1"><span class="text-lg">🖥️</span> Stays in your browser</span>
+        <span class="bg-slate-100 text-slate-700 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-1"><span class="text-lg">⏳</span> No data retention</span>
+      </div>
+
+      <!-- core privacy statement (detailed but simple) -->
+      <div class="prose prose-slate max-w-none">
+        <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2"><span class="w-1 h-6 bg-indigo-500 rounded-full"></span>We physically cannot see your photos</h2>
+        <p class="text-slate-600 leading-relaxed">
+          When you use our <strong>pan card resizer</strong>, the image you select <em>never leaves your device</em>. 
+          There is no upload, no server, no database. The resizing is performed by JavaScript in your own browser - 
+          the same technology that displays this text. That means your photo and signature stay completely private.
+        </p>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 my-7">
+          <p class="text-slate-700 text-lg font-medium">✋ <strong class="text-indigo-700">Pan resize</strong> happens locally - here’s the proof:</p>
+          <ul class="grid sm:grid-cols-2 gap-3 mt-3 text-slate-600">
+            <li class="flex items-start gap-2"><span class="text-indigo-600 text-xl">•</span> Your file is read via <code class="bg-white px-2 py-1 rounded text-sm border">input type="file"</code></li>
+            <li class="flex items-start gap-2"><span class="text-indigo-600 text-xl">•</span> Image is drawn on a canvas (in RAM)</li>
+            <li class="flex items-start gap-2"><span class="text-indigo-600 text-xl">•</span> Resized image becomes a download link</li>
+            <li class="flex items-start gap-2"><span class="text-indigo-600 text-xl">•</span> Original file & canvas are garbage-collected</li>
+          </ul>
+        </div>
+
+        <h2 class="text-2xl font-bold text-slate-800 mt-10 flex items-center gap-2"><span class="w-1 h-6 bg-indigo-500 rounded-full"></span>What we do NOT collect</h2>
+        <ul class="space-y-2 text-slate-600 list-disc pl-5">
+          <li><strong class="font-semibold">No images or uploads</strong> - we never receive any part of your picture.</li>
+          <li><strong class="font-semibold">No personal information</strong> - we don’t ask for name, email, or phone.</li>
+          <li><strong class="font-semibold">No analytics on file content</strong> - file names are only shown locally; they are not transmitted.</li>
+          <li><strong class="font-semibold">No tracking cookies</strong> (except the Google Analytics tag on the homepage, which is anonymized and doesn’t access your images).</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-slate-800 mt-10 flex items-center gap-2"><span class="w-1 h-6 bg-indigo-500 rounded-full"></span>Third-party services (the only exception)</h2>
+        <p class="text-slate-600">
+          The homepage includes the Google Analytics script (gtag.js) to count page visits - that’s all. 
+          It <span class="underline decoration-indigo-200">does not</span> have access to your image files or the canvas content. 
+          The analytics tag is completely separate from the resizer logic.
+        </p>
+        <p class="text-slate-600 mt-3">
+          We do not use Facebook pixels, advertising trackers, or any other third-party that could compromise your privacy.
+        </p>
+
+        <h2 class="text-2xl font-bold text-slate-800 mt-10 flex items-center gap-2"><span class="w-1 h-6 bg-indigo-500 rounded-full"></span>Data retention</h2>
+        <p class="text-slate-600">
+          We retain <strong class="font-mono">zero</strong> data. No logs, no copies, no metadata. Once you close the page, everything is gone.
+          If you download a resized image, that file is saved to your device - we have no copy.
+        </p>
+
+        <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-6 mt-10">
+          <p class="text-indigo-900 font-medium text-lg flex items-center gap-2"><span class="text-2xl">🛡️</span> In plain language:</p>
+          <p class="text-indigo-800">Using this <strong>pan card resizer</strong> is as private as using a calculator on your phone. The numbers (images) never leave the screen.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-slate-800 mt-10 flex items-center gap-2"><span class="w-1 h-6 bg-indigo-500 rounded-full"></span>Changes to this privacy page</h2>
+        <p class="text-slate-600">
+          If we ever change how we handle data (unlikely, because we don’t handle any), we’ll update this document. 
+          The current version is <strong class="font-mono">2026-02-24</strong>.
+        </p>
+
+        <p class="text-slate-500 text-sm border-t border-slate-200 pt-6 mt-8">
+          Questions? We’re reachable at <a href="mailto:help@pancardresizer.cc" class="text-indigo-600 underline-offset-2 hover:underline">help@pancardresizer.cc</a> - but remember, we can’t retrieve any of your images because we never had them.
+        </p>
+      </div>
+    </div>
+
+    <!-- small reassurance block linking back to main tool -->
+    <div class="mt-10 flex justify-center">
+      <a href="index#convert" class="group bg-white border border-slate-200 hover:border-indigo-300 rounded-full py-3 px-8 inline-flex items-center gap-3 shadow-sm transition">
+        <span class="text-indigo-700 font-medium">← back to <strong>pan card resizer</strong></span>
+        <span class="bg-indigo-100 rounded-full p-1 group-hover:bg-indigo-200 transition">📸</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- FOOTER - rewritten but keeping brand name and keywords for SEO -->
+  <footer class="bg-white border-t border-slate-200 mt-20 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <span class="text-2xl font-bold text-slate-900">🪪 PanCardResizer</span>
+        <p class="text-slate-500 mt-2 pr-4">The original <strong>pan card resizer</strong> since 2025. Get accurate
+          <strong>pan card photo size</strong> 213x213 and signature 400x200. Private, fast, free.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-800 mb-3">Services</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="index#convert" class="hover:text-indigo-700"><strong>Pan card photo resize</strong> (213x213)</a></li>
+          <li><a href="index#convert" class="hover:text-indigo-700"><strong>Pan resize</strong> signature (400x200)</a></li>
+          <li><a href="index#howto" class="hover:text-indigo-700">Step-by-step guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-800 mb-3">Information</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="privacy" class="hover:text-indigo-700">Privacy & Security</a></li>
+          <li><a href="terms" class="hover:text-indigo-700">Terms of use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-slate-800 mb-3">Contact</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="#" class="hover:text-indigo-700">help@pancardresizer.cc</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-slate-100 text-center text-slate-400 text-xs">
+      © 2026 <strong>pancardresizer.cc</strong> - the independent <strong>pan card resizer</strong>. All text and
+      content uniquely created. Official dimensions: <strong>pan card photo size</strong> 213x213 / 400x200 signature.
+    </div>
+  </footer>
+
+  <!-- mobile menu script (same as main, but ensures mobile menu works) -->
+  <script>
+    (function(){
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', (e) => { e.stopPropagation(); mobileMenu.classList.toggle('hidden'); });
+        document.addEventListener('click', (event) => { if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) mobileMenu.classList.add('hidden'); });
+      }
+    })();
+  </script>
+</body>
+</html>
