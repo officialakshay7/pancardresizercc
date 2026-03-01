@@ -86,10 +86,16 @@
 
   <!-- Tailwind & fonts (fast) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'Google Sans Variable';
+      src: url('assets/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype-variations');
+      font-weight: 100 900;
+      font-stretch: normal;
+    }
+
     * {
-      font-family: 'Inter', system-ui, sans-serif;
+      font-family: "Google Sans Variable", sans-serif;
     }
 
     html {
@@ -404,7 +410,7 @@
 
   <!-- JavaScript - same robust, fast logic (unchanged) -->
   <script>
-    (function () {
+    (window.onload = function () {
       const menuBtn = document.getElementById('menuBtn');
       const mobileMenu = document.getElementById('mobileMenu');
       if (menuBtn && mobileMenu) {
