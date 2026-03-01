@@ -80,7 +80,7 @@
   <link rel="stylesheet" href="tailwind/output.css">
 
   <!-- Google tag manager prefetch -->
-   <!-- <link rel="dns-prefetch" href="https://www.googletagmanager.com"> -->
+  <!-- <link rel="dns-prefetch" href="https://www.googletagmanager.com"> -->
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -144,7 +144,7 @@
                 photo</button>
               <span id="photoFileName" class="text-sm text-slate-500 ml-2">None chosen</span>
             </div>
-            <div class="grid grid-cols-3 gap-3 items-center">
+            <!-- <div class="grid grid-cols-3 gap-3 items-center">
               <div><label class="block text-xs text-slate-500 mb-1">Width</label><input type="number" id="photoWidth"
                   value="213"
                   class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-indigo-200" />
@@ -157,7 +157,27 @@
                   value="300"
                   class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-indigo-200" />
               </div>
+            </div> -->
+            <div class="grid grid-cols-3 gap-4">
+              <div>
+                <label for="photoWidth" class="block text-sm font-medium text-slate-700 mb-1">Width</label>
+                <input type="number" id="photoWidth" value="213"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none">
+              </div>
+
+              <div>
+                <label for="photoHeight" class="block text-sm font-medium text-slate-700 mb-1">Height</label>
+                <input type="number" id="photoHeight" value="213"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none">
+              </div>
+
+              <div>
+                <label for="photoDpi" class="block text-sm font-medium text-slate-700 mb-1">DPI</label>
+                <input type="number" id="photoDpi" value="300"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 outline-none">
+              </div>
             </div>
+
             <div class="bg-indigo-50/70 rounded-xl p-4 border border-indigo-200">
               <div class="flex justify-between items-center text-sm"><span class="font-medium text-slate-700">Live
                   preview <span class="font-normal">(official size)</span></span><span
@@ -195,7 +215,7 @@
                 signature</button>
               <span id="signatureFileName" class="text-sm text-slate-500 ml-2">None chosen</span>
             </div>
-            <div class="grid grid-cols-3 gap-3 items-center">
+            <!-- <div class="grid grid-cols-3 gap-3 items-center">
               <div><label class="block text-xs text-slate-500 mb-1">Width</label><input type="number"
                   id="signatureWidth" value="400" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" />
               </div>
@@ -204,7 +224,27 @@
                   class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" /></div>
               <div><label class="block text-xs text-slate-500 mb-1">DPI</label><input type="number" id="signatureDpi"
                   value="600" class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm" /></div>
+            </div> -->
+            <div class="grid grid-cols-3 gap-4">
+              <div>
+                <label for="signaturewidth" class="block text-sm font-medium text-slate-700 mb-1">Width</label>
+                <input type="number" id="signaturewidth" value="400"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm">
+              </div>
+
+              <div>
+                <label for="signatureHeight" class="block text-sm font-medium text-slate-700 mb-1">Height</label>
+                <input type="number" id="signatureHeight" value="200"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm">
+              </div>
+
+              <div>
+                <label for="signatureDpi" class="block text-sm font-medium text-slate-700 mb-1">DPI</label>
+                <input type="number" id="signatureDpi" value="600"
+                  class="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm">
+              </div>
             </div>
+            
             <div class="bg-emerald-50/70 rounded-xl p-4 border border-emerald-200">
               <div class="flex justify-between items-center text-sm"><span class="font-medium text-slate-700">Live
                   preview <span class="font-normal">(official)</span></span><span class="text-xs text-slate-400">400x200
