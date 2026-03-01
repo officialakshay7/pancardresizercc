@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Google Sans Variable';
+    src: url('../GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-stretch: normal;
+}
+
+* {
+    font-family: "Google Sans Variable", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0f172a;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-hover {
+    transition: all 0.15s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px -8px rgba(0, 0, 0, 0.1);
+}
