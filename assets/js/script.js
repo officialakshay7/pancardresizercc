@@ -31,10 +31,23 @@
             const img = new Image();
             img.onload = () => {
                 const canvas = document.createElement('canvas');
-                canvas.width = targetWidth; canvas.height = targetHeight;
+                canvas.width = targetWidth;
+                canvas.height = targetHeight;
                 const ctx = canvas.getContext('2d');
+
+                // Optional: Fill white background (JPEG doesn't support transparency)
+                ctx.fillStyle = "#fff";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
                 ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
-                canvas.toBlob((blob) => { if (!blob) return reject('Canvas to blob failed'); const url = URL.createObjectURL(blob); resolve({ blob, url, width: targetWidth, height: targetHeight }); }, 'image/png');
+
+                // Change 'image/png' to 'image/jpeg' and set quality (0.0 to 1.0)
+                // 0.8 is usually the "sweet spot" for quality vs size.
+                canvas.toBlob((blob) => {
+                    if (!blob) return reject('Canvas to blob failed');
+                    const url = URL.createObjectURL(blob);
+                    resolve({ blob, url, width: targetWidth, height: targetHeight });
+                }, 'image/jpeg', 0.8);
             };
             img.onerror = reject;
             img.src = URL.createObjectURL(file);
