@@ -1,1 +1,1 @@
-#Pan Card Resizer CC
+pan card resizer readme file
