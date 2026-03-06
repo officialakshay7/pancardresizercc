@@ -215,15 +215,62 @@
   <nav class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-30 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <a href="#" class="flex items-center space-x-2">
+        <a href="/" class="flex items-center space-x-2">
           <span class="text-2xl font-bold text-slate-900">🪪 <span class="text-indigo-700">PanCardResizer</span></span>
         </a>
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="index" class="text-slate-600 hover:text-indigo-800 transition">Home</a>
-          <a href="#convert" class="text-slate-600 hover:text-indigo-800 transition">Converter</a>
+          <a href="/" class="text-slate-600 hover:text-indigo-800 transition">Home</a>
+
+          <!-- Pan Resizers Dropdown -->
+          <div class="relative group">
+            <button class="text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
+              Pan Card Resizers
+              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown menu - appears on hover -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+              <a href="uti-pan-card-resizer"
+                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">UTI
+                Pan Card Resizer </a>
+              <a href="nsdl-pan-card-resizer"
+                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">NSDL
+                Pan Card Resizer</a>
+            </div>
+          </div>
+
+          <!-- Blogs Dropdown -->
+          <div class="relative group">
+            <button class="text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
+              Blogs
+              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+
+            <!-- Dropdown menu - appears on hover -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+              <a href="blogs/how-to-resize-pan-card-for-uti"
+                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
+                pan card for UTI?
+              </a>
+              <a href="blogs/how-to-resize-pan-card-for-nsdl"
+                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
+                pan card for NSDL?
+              </a>
+            </div>
+          </div>
+
+          <!-- <a href="#convert" class="text-slate-600 hover:text-indigo-800 transition">Converter</a>
           <a href="#howto" class="text-slate-600 hover:text-indigo-800 transition">Guide</a>
           <a href="#whyus" class="text-slate-600 hover:text-indigo-800 transition">Advantages</a>
-          <a href="#faq" class="text-slate-600 hover:text-indigo-800 transition">FAQ</a>
+          <a href="#faq" class="text-slate-600 hover:text-indigo-800 transition">FAQ</a> -->
         </div>
         <div class="md:hidden relative">
           <button aria-label="Open navigation menu" id="menuBtn"
@@ -235,11 +282,58 @@
           </button>
           <div id="mobileMenu"
             class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-100 hidden py-2 z-50">
-            <a href="index" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Home</a>
-            <a href="#convert" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Converter</a>
+            <a href="/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Home</a>
+            <!-- Pan Resizers Dropdown -->
+            <div class="relative group">
+              <button
+                class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
+                Pan Card Resizers
+                <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+
+              <!-- Dropdown menu - appears on hover -->
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+                <a href="uti-pan-card-resizer"
+                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">UTI
+                  Pan Card Resizer </a>
+                <a href="nsdl-pan-card-resizer"
+                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">NSDL
+                  Pan Card Resizer</a>
+              </div>
+            </div>
+
+            <!-- Blogs Dropdown -->
+            <div class="relative group">
+              <button
+                class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
+                Blogs
+                <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+
+              <!-- Dropdown menu - appears on hover -->
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
+                <a href="blogs/how-to-resize-pan-card-for-uti"
+                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
+                  pan card for UTI?
+                </a>
+                <a href="blogs/how-to-resize-pan-card-for-nsdl"
+                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
+                  pan card for NSDL?
+                </a>
+              </div>
+            </div>
+            <!-- <a href="#convert" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Converter</a>
             <a href="#howto" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Guide</a>
             <a href="#whyus" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Advantages</a>
-            <a href="#faq" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">FAQ</a>
+            <a href="#faq" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">FAQ</a> -->
           </div>
         </div>
       </div>
@@ -599,56 +693,69 @@
     </section>
 
     <!-- WHAT WEBSITE DOES -->
-     <section id="features" class="scroll-mt-20 mt-20">
+    <section id="features" class="scroll-mt-20 mt-20">
       <div class="bg-white border border-slate-200 rounded-xl shadow-md p-8 md:p-12">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-800 mb-6">
             What This <span class="text-indigo-700">PAN Card Resizer</span> Tool Does:
           </h2>
-          
+
           <p class="text-slate-600 mb-8 text-lg">
-            This tool prepares PAN Card files that meet <strong>official Income Tax Department guidelines</strong>, including:
+            This tool prepares PAN Card files that meet <strong>official Income Tax Department guidelines</strong>,
+            including:
           </p>
 
           <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">PAN Card photo resizing & cropping</p>
             </div>
-            
+
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">PAN Card signature resizing</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Document compression without quality loss</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Automatic file size adjustment (KB limits)</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Correct width, height & aspect ratio</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Clear image output with proper DPI</p>
             </div>
@@ -656,7 +763,8 @@
 
           <div class="mt-10 p-4 bg-slate-50 rounded-2xl border border-slate-100 text-center">
             <p class="text-slate-700 font-medium">
-              You can download files that are <strong>ready for direct upload</strong> on NSDL or UTI PAN application portals.
+              You can download files that are <strong>ready for direct upload</strong> on NSDL or UTI PAN application
+              portals.
             </p>
           </div>
         </div>
