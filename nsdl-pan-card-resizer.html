@@ -44,8 +44,7 @@
   <meta name="twitter:image" content="https://pancardresizer.cc/twitter-preview-nsdl.jpg" />
 
   <!-- Favicon and theme -->
-  <link rel="icon" type="image/png"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%230f172a'%3E%3Crect width='100' height='100' rx='20' /%3E%3Ctext x='18' y='70' font-size='70' fill='white'%3E🪪%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="assets/img/pan_card_logo.png" />
   <meta name="theme-color" content="#0f172a" />
 
   <!-- Schema.org JSON-LD - NSDL Focused -->
@@ -54,9 +53,9 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Product",
-      "name": "NSDL PAN Card Resizer",
-      "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%230f172a'%3E%3Crect width='100' height='100' rx='20' /%3E%3Ctext x='18' y='70' font-size='70' fill='white'%3E🪪%3C/text%3E%3C/svg%3E",
+     "@type": "WebApplication",
+      "name": "PAN Card Resizer",
+      "image": "assets/img/pan_card_logo.png",
       "description": "Specialized online tool to resize PAN card photo and signature for NSDL (Protean) portal applications to exact specifications",
       "brand": {
         "@type": "Brand",
@@ -357,9 +356,12 @@
 
       <!-- NSDL Badge -->
       <div class="flex flex-wrap gap-3 mb-6">
-        <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">✓ NSDL (Protean) Approved Dimensions</span>
-        <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">✓ Direct NSDL Portal Upload</span>
-        <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">✓ 15,000+ NSDL Users Daily</span>
+        <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">✓ NSDL (Protean)
+          Approved Dimensions</span>
+        <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">✓ Direct NSDL Portal
+          Upload</span>
+        <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">✓ 15,000+ NSDL Users
+          Daily</span>
       </div>
 
       <!-- two cards with NSDL specific content -->
@@ -406,7 +408,8 @@
             <div class="bg-indigo-50/70 rounded-xl p-4 border border-indigo-200">
               <div class="flex justify-between items-center text-sm">
                 <span class="font-medium text-slate-700">NSDL Preview
-                  <span class="font-normal">(official NSDL size)</span></span><span class="text-xs text-slate-400">213x213
+                  <span class="font-normal">(official NSDL size)</span></span><span
+                  class="text-xs text-slate-400">213x213
                   @300 DPI - NSDL Spec</span>
               </div>
               <div class="flex gap-4 mt-1 text-sm">
@@ -446,7 +449,8 @@
           <div class="space-y-4">
             <div
               class="border-2 border-dashed border-slate-200 rounded-xl p-4 text-center hover:border-emerald-300 transition bg-slate-50/30">
-              <input type="file" id="signatureInput" accept="image/*" class="hidden" aria-label="Upload NSDL Signature" />
+              <input type="file" id="signatureInput" accept="image/*" class="hidden"
+                aria-label="Upload NSDL Signature" />
               <button id="signatureChooseBtn"
                 class="bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-medium py-2 px-5 rounded-full text-sm transition">
                 Select NSDL signature
@@ -596,7 +600,8 @@
       <div class="bg-white border border-slate-200 rounded-xl shadow-md p-8 mb-12">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="flex flex-col items-center">
-            <span class="text-sm font-bold text-indigo-700 mb-6 uppercase tracking-wider">NSDL Official PAN Card Photo</span>
+            <span class="text-sm font-bold text-indigo-700 mb-6 uppercase tracking-wider">NSDL Official PAN Card
+              Photo</span>
             <div class="relative border-2 border-slate-300 p-1 bg-white shadow-sm">
               <div class="absolute -top-7 left-0 right-0 flex justify-between items-center">
                 <div class="h-px bg-slate-400 w-full"></div>
@@ -611,11 +616,13 @@
               <img src="assets/img/photo_dimensions.png" alt="NSDL Official PAN Card Photo Size"
                 class="w-32 h-40 object-cover" />
             </div>
-            <p class="mt-6 text-xs text-slate-400 font-medium uppercase tracking-widest">213 x 213 Pixels @ 300 DPI - NSDL Spec</p>
+            <p class="mt-6 text-xs text-slate-400 font-medium uppercase tracking-widest">213 x 213 Pixels @ 300 DPI -
+              NSDL Spec</p>
           </div>
 
           <div class="flex flex-col items-center">
-            <span class="text-sm font-bold text-emerald-700 mb-6 uppercase tracking-wider">NSDL Official PAN Card Signature</span>
+            <span class="text-sm font-bold text-emerald-700 mb-6 uppercase tracking-wider">NSDL Official PAN Card
+              Signature</span>
             <div class="relative border-2 border-slate-300 p-1 bg-white shadow-sm">
               <div class="absolute -top-7 left-0 right-0 flex justify-between items-center">
                 <div class="h-px bg-slate-400 w-full"></div>
@@ -630,7 +637,8 @@
               <img src="assets/img/signature_dimensions.png" alt="NSDL Official PAN Card Signature Size"
                 class="w-32 h-40 object-contain bg-white" />
             </div>
-            <p class="mt-6 text-xs text-slate-400 font-medium uppercase tracking-widest">400 x 200 Pixels @ 600 DPI - NSDL Spec</p>
+            <p class="mt-6 text-xs text-slate-400 font-medium uppercase tracking-widest">400 x 200 Pixels @ 600 DPI -
+              NSDL Spec</p>
           </div>
         </div>
       </div>
@@ -703,56 +711,69 @@
     </section>
 
     <!-- WHAT NSDL TOOL DOES -->
-     <section id="features" class="scroll-mt-20 mt-20">
+    <section id="features" class="scroll-mt-20 mt-20">
       <div class="bg-white border border-slate-200 rounded-xl shadow-md p-8 md:p-12">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl font-bold text-slate-800 mb-6">
             What This <span class="text-indigo-700">NSDL PAN Card Resizer</span> Tool Does:
           </h2>
-          
+
           <p class="text-slate-600 mb-8 text-lg">
-            This NSDL-specific tool prepares PAN Card files that meet <strong>NSDL (Protean) official guidelines</strong>, including:
+            This NSDL-specific tool prepares PAN Card files that meet <strong>NSDL (Protean) official
+              guidelines</strong>, including:
           </p>
 
           <div class="grid md:grid-cols-2 gap-x-12 gap-y-4">
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">NSDL PAN card photo resizing & cropping</p>
             </div>
-            
+
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">NSDL PAN card signature resizing</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Document compression for NSDL portal limits</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Automatic file size adjustment (NSDL KB limits)</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Correct NSDL width, height & aspect ratio</p>
             </div>
 
             <div class="flex items-start gap-3">
               <div class="mt-1 bg-indigo-100 rounded-full p-1">
-                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
               <p class="text-slate-700">Clear image output with proper DPI for NSDL</p>
             </div>
@@ -760,7 +781,8 @@
 
           <div class="mt-10 p-4 bg-slate-50 rounded-2xl border border-slate-100 text-center">
             <p class="text-slate-700 font-medium">
-              You can download files that are <strong>ready for direct upload</strong> on NSDL (Protean) PAN application portal.
+              You can download files that are <strong>ready for direct upload</strong> on NSDL (Protean) PAN application
+              portal.
             </p>
           </div>
         </div>
@@ -779,7 +801,8 @@
             What are the official NSDL PAN card image sizes?
           </summary>
           <p class="mt-3 text-slate-600">
-            Based on NSDL (Protean) official specifications, the photo must be 213x213 pixels (300 DPI) and the signature 400x200 pixels (600 DPI). Our NSDL pan card resizer uses these as default presets.
+            Based on NSDL (Protean) official specifications, the photo must be 213x213 pixels (300 DPI) and the
+            signature 400x200 pixels (600 DPI). Our NSDL pan card resizer uses these as default presets.
           </p>
         </details>
 
@@ -788,7 +811,8 @@
             Is this tool specifically for NSDL (Protean) PAN portal?
           </summary>
           <p class="mt-3 text-slate-600">
-            Yes, the NSDL pan card photo resize output is specifically designed to meet the exact requirements of the NSDL (Protean) online portal. Once you resize, you can upload the JPEG directly to NSDL application.
+            Yes, the NSDL pan card photo resize output is specifically designed to meet the exact requirements of the
+            NSDL (Protean) online portal. Once you resize, you can upload the JPEG directly to NSDL application.
           </p>
         </details>
 
@@ -797,7 +821,8 @@
             Do you keep copies of my NSDL images?
           </summary>
           <p class="mt-3 text-slate-600">
-            No. Everything runs in your browser - we never see or store your NSDL images. Your NSDL pan resize is completely private and secure.
+            No. Everything runs in your browser - we never see or store your NSDL images. Your NSDL pan resize is
+            completely private and secure.
           </p>
         </details>
 
@@ -806,7 +831,8 @@
             Can CSC operators use this NSDL PAN card resizer?
           </summary>
           <p class="mt-3 text-slate-600">
-            Absolutely. Common Service Center (CSC) operators and VLEs processing NSDL PAN applications can use our NSDL card resize tool for multiple clients quickly without needing heavy photo editing software.
+            Absolutely. Common Service Center (CSC) operators and VLEs processing NSDL PAN applications can use our NSDL
+            card resize tool for multiple clients quickly without needing heavy photo editing software.
           </p>
         </details>
 
@@ -815,7 +841,8 @@
             Does NSDL require 3.5cm x 4.5cm physical size?
           </summary>
           <p class="mt-3 text-slate-600">
-            Yes. When you set the NSDL pan card photo size to 213x213 pixels at 300 DPI, it translates exactly to the 3.5 cm x 4.5 cm physical requirement mentioned in the NSDL application form.
+            Yes. When you set the NSDL pan card photo size to 213x213 pixels at 300 DPI, it translates exactly to the
+            3.5 cm x 4.5 cm physical requirement mentioned in the NSDL application form.
           </p>
         </details>
 
@@ -824,7 +851,8 @@
             What are NSDL's background and ink requirements?
           </summary>
           <p class="mt-3 text-slate-600">
-            For the NSDL photo, use a plain white background. For the signature, always use black ink on a white background for better clarity as per NSDL (Protean) guidelines.
+            For the NSDL photo, use a plain white background. For the signature, always use black ink on a white
+            background for better clarity as per NSDL (Protean) guidelines.
           </p>
         </details>
 
@@ -833,7 +861,8 @@
             How do I ensure NSDL file size is between 20KB and 50KB?
           </summary>
           <p class="mt-3 text-slate-600">
-            Our NSDL pan card photo resize algorithm optimizes the JPEG compression specifically for NSDL (Protean) requirements to help you stay within the 20KB-50KB range for photos and 10KB-20KB for signatures.
+            Our NSDL pan card photo resize algorithm optimizes the JPEG compression specifically for NSDL (Protean)
+            requirements to help you stay within the 20KB-50KB range for photos and 10KB-20KB for signatures.
           </p>
         </details>
 
@@ -842,7 +871,8 @@
             Can I resize my NSDL PAN photo using a mobile phone?
           </summary>
           <p class="mt-3 text-slate-600">
-            Yes. You can take a photo of your passport picture or signature with your phone, upload it to our NSDL resizer, and download the processed version ready for NSDL portal upload.
+            Yes. You can take a photo of your passport picture or signature with your phone, upload it to our NSDL
+            resizer, and download the processed version ready for NSDL portal upload.
           </p>
         </details>
 
@@ -851,7 +881,8 @@
             Is there a limit on using this NSDL PAN card tool?
           </summary>
           <p class="mt-3 text-slate-600">
-            None. You can use this NSDL pan card photo size tool as many times as you want, completely free of charge for all your NSDL PAN applications.
+            None. You can use this NSDL pan card photo size tool as many times as you want, completely free of charge
+            for all your NSDL PAN applications.
           </p>
         </details>
 
@@ -860,7 +891,8 @@
             Does NSDL (Protean) accept JPEG from this resizer?
           </summary>
           <p class="mt-3 text-slate-600">
-            Yes, this NSDL-specific tool outputs in JPEG format which is directly accepted by the NSDL (Protean) online portal for PAN card applications.
+            Yes, this NSDL-specific tool outputs in JPEG format which is directly accepted by the NSDL (Protean) online
+            portal for PAN card applications.
           </p>
         </details>
       </div>
