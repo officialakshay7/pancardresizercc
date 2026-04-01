@@ -138,19 +138,82 @@
 </script>
 
   <!-- Tailwind & fonts -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../tailwind/output.css" />
+    <link rel="preload" href="../assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </noscript>
+
+    <link rel="preload" href="../tailwind/output.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../tailwind/output.css">
+    </noscript>
 
   <!-- Google tag manager -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8Z3F2Y6NL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-E8Z3F2Y6NL");
-  </script>
+   <script>
+        // Google Analytics 4 Lazy Loader (Optimized)
+
+        (function () {
+
+            const measurementId = "G-E8Z3F2Y6NL";
+            let loaded = false;
+            let timerId;
+
+            function loadAnalytics(trigger) {
+
+                if (loaded) return;
+                loaded = true;
+
+                // Remove listeners
+                window.removeEventListener('scroll', onInteract);
+                window.removeEventListener('mousemove', onInteract);
+                window.removeEventListener('touchstart', onInteract);
+                window.removeEventListener('keydown', onInteract);
+                window.removeEventListener('click', onInteract);
+
+                clearTimeout(timerId);
+
+                // Load GA script
+                const script = document.createElement('script');
+                script.src =
+                    `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+
+                script.async = true;
+
+                document.head.appendChild(script);
+
+                // Initialize GA
+                window.dataLayer = window.dataLayer || [];
+
+                window.gtag = function () {
+                    window.dataLayer.push(arguments);
+                };
+
+                window.gtag('js', new Date());
+
+                window.gtag('config', measurementId, {
+                    transport_type: 'beacon'
+                });
+
+            }
+
+            function onInteract(e) {
+                loadAnalytics(e.type);
+            }
+
+            // Load on interaction
+            window.addEventListener('scroll', onInteract, { passive: true, once: true });
+            window.addEventListener('mousemove', onInteract, { passive: true, once: true });
+            window.addEventListener('touchstart', onInteract, { passive: true, once: true });
+            window.addEventListener('keydown', onInteract, { passive: true, once: true });
+            window.addEventListener('click', onInteract, { passive: true, once: true });
+
+            // Fallback: Load after 5 seconds
+            timerId = setTimeout(function () {
+                loadAnalytics('timeout');
+            }, 5000);
+
+        })();
+    </script>
 
   <style>
     .blog-content h2 {
