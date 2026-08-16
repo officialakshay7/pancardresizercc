@@ -1,418 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy & security - Pan Card Resizer</title>
-  <meta name="description"
-    content="Strict no-upload privacy policy for pan card resizer. Your images never leave your device. 100% private pan card photo resize & signature tool." />
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/png"
-    href="../assets/img/pan_card_logo.webp" />
-  <meta name="theme-color" content="#0f172a" />
-  <!-- reuse same styles -->
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../tailwind/output.css" />
-  <style>
-    .card-hover {
-      transition: all 0.15s ease;
-    }
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8Z3F2Y6NL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8Z3F2Y6NL');
+  </script>
 
-    .card-hover:hover {
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-      transform: translateY(-1px);
-    }
+  <title>Privacy Policy — pancardresizer.cc</title>
+  <meta name="description" content="How Pan Card Resizer handles your data: your photo and signature are processed entirely in your browser and are never uploaded or stored.">
+  <meta name="author" content="pancardresizer.cc">
+  <meta name="language" content="English">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://pancardresizer.cc/pages/privacy">
 
-    .legal-text a {
-      color: #4f46e5;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pancardresizer.cc/pages/privacy">
+  <meta property="og:title" content="Privacy Policy — pancardresizer.cc">
+  <meta property="og:description" content="How Pan Card Resizer handles your data: your photo and signature are processed entirely in your browser and are never uploaded or stored.">
+  <meta property="og:image" content="https://pancardresizer.cc/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="pancardresizer.cc">
+  
 
-    .privacy-badge {
-      background: #e0f2fe;
-      color: #0369a1;
-      font-size: 0.8rem;
-      padding: 0.25rem 0.8rem;
-      border-radius: 999px;
-      display: inline-block;
-      font-weight: 500;
-    }
-  </style>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy — pancardresizer.cc">
+  <meta name="twitter:description" content="How Pan Card Resizer handles your data: your photo and signature are processed entirely in your browser and are never uploaded or stored.">
+  <meta name="twitter:image" content="https://pancardresizer.cc/og-preview.jpg">
+
+  <link rel="icon" type="image/png" href="/assets/img/pan_card_logo.webp">
+  <link rel="apple-touch-icon" href="/assets/img/pan_card_logo.png">
+  <meta name="theme-color" content="#172033">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/tailwind/output.css">
+  
+
 </head>
+<body class="bg-paper text-ink font-body antialiased">
 
-<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
-
-  <!-- NAVIGATION (brand unchanged) -->
-  <nav class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-30 border-b border-slate-200">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-ink focus:px-4 focus:py-2 focus:rounded focus:z-50">Skip to content</a>
+  <nav class="bg-paper/95 backdrop-blur border-b border-line sticky top-0 z-30">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <a href="../" class="flex items-center space-x-2">
-          <span class="text-2xl font-bold text-slate-900">🪪 <span class="text-indigo-700">PanCardResizer</span></span>
+        <a href="/" class="flex items-center gap-2 group">
+          <span class="relative w-8 h-8 rounded bg-ink flex items-center justify-center">
+            <span class="w-3 h-3 rounded-full border-2 border-stamp"></span>
+          </span>
+          <span class="font-mono text-xs sm:text-sm tracking-widest uppercase text-ink font-medium">Pan Card Resizer</span>
         </a>
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="../" class="text-slate-600 hover:text-indigo-800 transition">Home</a>
-
-          <!-- Pan Resizers Dropdown -->
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+          <a href="/" class="text-ink-soft hover:text-stamp transition">Home</a>
           <div class="relative group">
-            <button class="text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
-              Pan Card Resizers
-              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+            <button class="text-ink-soft hover:text-stamp transition inline-flex items-center gap-1">
+              Resizers
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-
-            <!-- Dropdown menu - appears on hover -->
-            <div
-              class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-              <a href="../uti-pan-card-resizer"
-                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">UTI
-                Pan Card Resizer </a>
-              <a href="../nsdl-pan-card-resizer"
-                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">NSDL
-                Pan Card Resizer</a>
+            <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-line">
+              <a href="/uti-pan-card-resizer" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper hover:text-stamp">UTI PAN card resizer</a>
+              <a href="/nsdl-pan-card-resizer" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper hover:text-stamp">NSDL PAN card resizer</a>
             </div>
           </div>
-
-          <!-- Blogs Dropdown -->
-          <div class="relative group">
-            <button class="text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
-              Blogs
-              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </button>
-
-            <!-- Dropdown menu - appears on hover -->
-            <div
-              class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-              <a href="../blogs/how-to-resize-pan-card-for-uti"
-                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
-                pan card for UTI?
-              </a>
-              <a href="../blogs/how-to-resize-pan-card-for-nsdl"
-                class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
-                pan card for NSDL?
-              </a>
-            </div>
-          </div>
-
-          <!-- <a href="#convert" class="text-slate-600 hover:text-indigo-800 transition">Converter</a>
-          <a href="#howto" class="text-slate-600 hover:text-indigo-800 transition">Guide</a>
-          <a href="#whyus" class="text-slate-600 hover:text-indigo-800 transition">Advantages</a>
-          <a href="#faq" class="text-slate-600 hover:text-indigo-800 transition">FAQ</a> -->
+          <a href="/blogs/" class="text-ink-soft hover:text-stamp transition">Guides</a>
+          <a href="/pages/about" class="text-ink-soft hover:text-stamp transition">About</a>
         </div>
         <div class="md:hidden relative">
-          <button aria-label="Open navigation menu" id="menuBtn"
-            class="p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button aria-label="Open navigation menu" id="menuBtn" class="p-2 rounded-md text-ink-soft hover:bg-paper-raised focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
           </button>
-          <div id="mobileMenu"
-            class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-slate-100 hidden py-2 z-50">
-            <a href="../" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Home</a>
-            <!-- Pan Resizers Dropdown -->
-            <div class="relative group">
-              <button
-                class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
-                Pan Card Resizers
-                <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-
-              <!-- Dropdown menu - appears on hover -->
-              <div
-                class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                <a href="../uti-pan-card-resizer"
-                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">UTI
-                  Pan Card Resizer </a>
-                <a href="../nsdl-pan-card-resizer"
-                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">NSDL
-                  Pan Card Resizer</a>
-              </div>
-            </div>
-
-            <!-- Blogs Dropdown -->
-            <div class="relative group">
-              <button
-                class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50 text-slate-600 hover:text-indigo-800 transition inline-flex items-center">
-                Blogs
-                <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-
-              <!-- Dropdown menu - appears on hover -->
-              <div
-                class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100">
-                <a href="../blogs/how-to-resize-pan-card-for-uti"
-                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
-                  pan card for UTI?
-                </a>
-                <a href="../blogs/how-to-resize-pan-card-for-nsdl"
-                  class="block px-4 py-2 text-sm text-slate-600 hover:bg-indigo-50 hover:text-indigo-800">How to resize
-                  pan card for NSDL?
-                </a>
-              </div>
-            </div>
-            <!-- <a href="#convert" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Converter</a>
-            <a href="#howto" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Guide</a>
-            <a href="#whyus" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">Advantages</a>
-            <a href="#faq" class="block px-4 py-2 text-sm text-slate-700 hover:bg-indigo-50">FAQ</a> -->
+          <div id="mobileMenu" class="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-line hidden py-2 z-50">
+            <a href="/" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper">Home</a>
+            <a href="/uti-pan-card-resizer" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper">UTI PAN card resizer</a>
+            <a href="/nsdl-pan-card-resizer" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper">NSDL PAN card resizer</a>
+            <a href="/blogs/" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper">Guides</a>
+            <a href="/pages/about" class="block px-4 py-2 text-sm text-ink-soft hover:bg-paper">About</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- main content: privacy policy -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex-grow w-full">
+  <main id="main">
 
-    <!-- back link and badge -->
-    <div class="mb-6 flex flex-wrap items-center gap-3">
-      <a href="../" class="text-indigo-600 hover:text-indigo-800 text-sm flex items-center gap-1 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        ← back to pan card resizer
-      </a>
-      <span class="privacy-badge">🔒 100% client-side</span>
-      <span class="privacy-badge bg-amber-50 text-amber-800 border border-amber-200">🛡️ zero image upload</span>
-    </div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <nav aria-label="Breadcrumb" class="font-mono text-xs uppercase tracking-wide text-ink-soft mb-8"><a href="/" class="hover:text-stamp transition">Home</a> <span class="text-line mx-1">/</span> <span class="text-ink">Privacy policy</span></nav>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pancardresizer.cc/"}, {"@type": "ListItem", "position": 2, "name": "Privacy policy"}]}</script>
 
-    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-3">Privacy & security</h1>
-    <p class="text-slate-500 text-lg max-w-3xl mb-8">Last updated: March 2026 - because your <strong>pan card
-        photo</strong> and signature are personal, we built the tool around <strong>absolute privacy</strong>.</p>
-
-    <!-- highlight box: main promise -->
-    <div class="bg-indigo-50 border-l-8 border-indigo-400 rounded-2xl p-6 mb-10 shadow-sm">
-      <div class="flex items-start gap-4">
-        <span class="text-5xl">🔏</span>
-        <div>
-          <h2 class="text-2xl font-bold text-indigo-800 mb-1">Your images never leave your device</h2>
-          <p class="text-slate-700 text-lg leading-relaxed">
-            The <strong>pan card resizer</strong> runs entirely in your browser. When you select a photo or signature,
-            <strong>no file is uploaded</strong> to any server - not even temporarily. The resizing, DPI adjustment, and
-            compression happen locally. We have <em>zero</em> access to your pictures.
-          </p>
-        </div>
+      <p class="eyebrow text-stamp mb-3">Legal</p>
+      <h1 class="font-display font-bold text-4xl text-ink mb-2">Privacy policy</h1>
+      <p class="text-sm text-ink-soft/70 mb-10 font-mono">Last updated: August 2026</p>
+      <div class="prose-content text-ink-soft space-y-5 text-base leading-relaxed">
+        <h2 class="font-display font-semibold text-xl text-ink">Your photo and signature</h2>
+        <p>They never leave your device. Resizing happens entirely in your browser using the Canvas API &mdash; when you choose a file, it's read locally, processed locally, and offered back to you as a download. We don't receive it, store it, or have any way to see it.</p>
+        <h2 class="font-display font-semibold text-xl text-ink pt-4">Analytics</h2>
+        <p>We use Google Analytics to understand traffic at a high level &mdash; roughly how many people visit and which pages get used. It collects standard technical details like approximate location (city-level, from IP address), browser, and device type. It never sees the images you resize, because those never reach a server. You can opt out using a browser extension such as Google's Analytics opt-out add-on, or your browser's tracking-protection settings.</p>
+        <h2 class="font-display font-semibold text-xl text-ink pt-4">Advertising</h2>
+        <p>This site participates in Google AdSense, which may use cookies to show relevant ads and may collect data as described in Google's own advertising privacy policy. You can manage ad personalisation at <a href="https://adssettings.google.com" class="text-stamp underline" rel="nofollow">adssettings.google.com</a>.</p>
+        <h2 class="font-display font-semibold text-xl text-ink pt-4">Cookies</h2>
+        <p>Aside from the cookies Google Analytics and Google AdSense set, this site doesn't use its own. There's no login and no user profile to track.</p>
+        <h2 class="font-display font-semibold text-xl text-ink pt-4">Changes</h2>
+        <p>If this policy changes, the date above will be updated and the change reflected directly on this page.</p>
+        <h2 class="font-display font-semibold text-xl text-ink pt-4">Questions</h2>
+        <p><a href="/pages/contact" class="text-stamp underline">Contact us</a> any time.</p>
       </div>
     </div>
 
-    <!-- detailed sections -->
-    <div class="bg-white border border-slate-200 rounded-3xl shadow-sm p-8 md:p-10 space-y-8 legal-text">
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">📌</span> 1.
-          No server upload - local processing</h2>
-        <p class="text-slate-700 leading-relaxed">
-          Our core feature: the <strong>pan card photo resize</strong> tool uses JavaScript (Canvas API) to process
-          images directly on your computer, phone, or tablet. We do not maintain any image storage, temporary copies, or
-          databases. Unlike many online tools, we deliberately avoid any backend that could log or inspect your personal
-          images. This includes both the <strong>213x213 photo</strong> and the <strong>400x200 signature</strong>.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">🍪</span> 2.
-          Cookies & analytics (anonymized)</h2>
-        <p class="text-slate-700 leading-relaxed">
-          We use Google Analytics (with IP anonymization) to understand aggregate traffic patterns - e.g., how many
-          users access the <strong>pan card resizer</strong>, which device they use, and rough geographic region. Google
-          Analytics sets cookies to distinguish unique visitors. <strong>No image data, file names, or personal
-            identifiers are ever sent to analytics.</strong> You may block cookies via browser settings; the resizing
-          tool will still work perfectly.
-        </p>
-        <p class="text-slate-600 mt-2 text-sm">Opt-out: you can install the <a
-            href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out
-            browser add-on</a>.</p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">📊</span> 3.
-          Data we collect (and don't collect)</h2>
-        <ul class="list-disc pl-6 space-y-2 text-slate-700">
-          <li><strong class="text-indigo-700">We do NOT collect:</strong> your images, file names, EXIF data, IP
-            addresses linked to specific uploads, or any personal information.</li>
-          <li><strong class="text-indigo-700">We may receive:</strong> anonymized analytics (page views, referral links,
-            browser version). This helps us improve the <strong>pan card resize</strong> experience.</li>
-          <li><strong class="text-indigo-700">No login, no email collection:</strong> we don't ask for your email to
-            download the resized image - it's instant and frictionless.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">🔄</span> 4.
-          Third-party services & links</h2>
-        <p class="text-slate-700 leading-relaxed">
-          This page contains links to official portals (NSDL, UTIITSL) for reference. Those sites have their own privacy
-          policies. We also use Google Analytics (as mentioned) and host the site on reliable infrastructure. No third
-          party has access to your images. We do not display ads that track you.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">🧠</span> 5.
-          Why “client-side” matters for PAN card</h2>
-        <p class="text-slate-700 leading-relaxed">
-          A <strong>pan card photo</strong> contains biometric-like information (your face) and your signature is a
-          unique identifier. Sending them to a server creates unnecessary risk. By doing everything offline, the
-          <strong>pan card resizer</strong> eliminates the possibility of data leaks, unauthorized sharing, or misuse.
-          We designed it with privacy by design.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">📁</span> 6.
-          Local storage / cached files</h2>
-        <p class="text-slate-700 leading-relaxed">
-          While processing, your image is temporarily held in your device's memory (RAM) and drawn on an HTML5 canvas.
-          Once you download the result or close the tab, the memory is cleared. We do not use localStorage, IndexedDB,
-          or any other persistent storage for your images.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">📧</span> 7.
-          Contact & data requests</h2>
-        <p class="text-slate-700 leading-relaxed">
-          Since we hold no personal data, we cannot provide copies of “your data” - there is nothing stored. If you have
-          questions about privacy, feel free to contact us at <a href="#" class="font-medium">help@pancardresizer.cc</a>.
-          We'll respond within a reasonable time.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">⚖️</span> 8.
-          Children's privacy</h2>
-        <p class="text-slate-700 leading-relaxed">
-          The service is not directed to individuals under 13. We do not knowingly collect any information from
-          children. If a parent or guardian becomes aware that a child has provided images (which we don't collect),
-          they should know that the processing is local and no data is retained.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center gap-2"><span class="text-2xl">🕓</span> 9.
-          Changes to this policy</h2>
-        <p class="text-slate-700 leading-relaxed">
-          If we update this privacy page, we will change the “Last updated” date at the top. Material changes will be
-          noted on the main <strong>pan card resizer</strong> page. We encourage you to review this page occasionally.
-        </p>
-      </section>
-
-      <!-- final reassurance box -->
-      <div class="bg-emerald-50 border border-emerald-300 rounded-2xl p-6 text-emerald-900">
-        <p class="font-semibold text-lg flex items-center gap-2">✅ <span>Summary: your privacy is our foundation</span>
-        </p>
-        <p class="mt-1">No uploads, no servers, no image retention. That's the <strong>pan card resize</strong> promise.
-          You can verify by using the tool offline (disconnect WiFi after loading the page - it still works!).</p>
-      </div>
-    </div>
-
-    <!-- navigation back -->
-    <div class="mt-12 text-center">
-      <a href="../"
-        class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-800 font-medium bg-indigo-50 px-6 py-3 rounded-full transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-        pan card resizer home
-      </a>
-    </div>
   </main>
 
-  <!-- FOOTER (same as main, with active privacy highlight) -->
-  <footer class="bg-white border-t border-slate-200 mt-16 py-12">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+  <footer class="bg-ink text-paper mt-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
       <div>
-        <span class="text-2xl font-bold text-slate-900">🪪 PanCardResizer</span>
-        <p class="text-slate-500 mt-2 pr-4">
-          The original <strong>pan card resizer</strong> since 2025. Get
-          accurate <strong>pan card photo size</strong> 213x213 and signature
-          400x200. Private, fast, free.
-        </p>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-7 h-7 rounded bg-paper/10 flex items-center justify-center"><span class="w-2.5 h-2.5 rounded-full border-2 border-stamp"></span></span>
+          <span class="font-mono text-xs tracking-widest uppercase">Pan Card Resizer</span>
+        </div>
+        <p class="text-mist60 leading-relaxed">A free tool that resizes your PAN card photo and signature to the exact NSDL or UTI spec, right in your browser.</p>
       </div>
       <div>
-        <h4 class="font-semibold text-slate-800 mb-3">Services</h4>
-        <ul class="space-y-2 text-slate-500">
-          <li><a href="../#convert" class="hover:text-indigo-700"><strong>Pan card photo resize</strong> (213x213)</a>
-          </li>
-          <li><a href="../#convert" class="hover:text-indigo-700"><strong>Pan resize</strong> signature (400x200)</a>
-          </li>
-          <li><a href="../#howto" class="hover:text-indigo-700">Step-by-step guide</a></li>
+        <h4 class="eyebrow text-mist40 mb-3">Resizers</h4>
+        <ul class="space-y-2 text-mist70">
+          <li><a href="/" class="hover:text-white transition">General resizer</a></li>
+          <li><a href="/uti-pan-card-resizer" class="hover:text-white transition">UTI PAN card resizer</a></li>
+          <li><a href="/nsdl-pan-card-resizer" class="hover:text-white transition">NSDL PAN card resizer</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold text-slate-800 mb-3">Information</h4>
-        <ul class="space-y-2 text-slate-500">
-          <li>
-            <a href="./about" class="hover:text-indigo-700">About us</a>
-          </li>
-          <li>
-            <a href="./contact" class="hover:text-indigo-700">Contact us</a>
-          </li>
-          <li>
-            <a href="./privacy" class="hover:text-indigo-700">Privacy & Security</a>
-          </li>
-          <li>
-            <a href="./terms" class="hover:text-indigo-700">Terms of use</a>
-          </li>
-          <li>
-            <a href="./disclaimer" class="hover:text-indigo-700">Disclaimer</a>
-          </li>
+        <h4 class="eyebrow text-mist40 mb-3">Guides</h4>
+        <ul class="space-y-2 text-mist70">
+          <li><a href="/blogs/how-to-resize-pan-card-for-uti" class="hover:text-white transition">Resize for UTI</a></li>
+          <li><a href="/blogs/how-to-resize-pan-card-for-nsdl" class="hover:text-white transition">Resize for NSDL</a></li>
+          <li><a href="/blogs/" class="hover:text-white transition">All guides</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold text-slate-800 mb-3">Contact</h4>
-        <ul class="space-y-2 text-slate-500">
-          <li><a href="#" class="hover:text-indigo-700">help@pancardresizer.cc</a></li>
+        <h4 class="eyebrow text-mist40 mb-3">Info</h4>
+        <ul class="space-y-2 text-mist70">
+          <li><a href="/pages/about" class="hover:text-white transition">About</a></li>
+          <li><a href="/pages/privacy" class="hover:text-white transition">Privacy policy</a></li>
+          <li><a href="/pages/terms" class="hover:text-white transition">Terms of use</a></li>
+          <li><a href="/pages/disclaimer" class="hover:text-white transition">Disclaimer</a></li>
+          <li><a href="/pages/contact" class="hover:text-white transition">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-slate-100 text-center text-slate-400 text-xs">
-      © 2026 <strong>pancardresizer.cc</strong> - independent
-      <strong>pan card resizer</strong>. Official dimensions:
-      <strong>pan card photo size</strong> 213x213 / 400x200 signature.
+    <div class="border-t border-mist10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-mist40 flex flex-col sm:flex-row justify-between gap-2">
+        <span>&copy; 2026 pancardresizer.cc</span>
+        <span>Independent tool &mdash; not affiliated with NSDL, Protean, UTIITSL, or the Income Tax Department.</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Google Analytics (same as main) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8Z3F2Y6NL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-E8Z3F2Y6NL');
-  </script>
-
-  <!-- minimal script for mobile menu -->
-  <script>
-    (function () {
-      const menuBtn = document.getElementById('menuBtn');
-      const mobileMenu = document.getElementById('mobileMenu');
-      if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          mobileMenu.classList.toggle('hidden');
-        });
-        document.addEventListener('click', (event) => {
-          if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
-            mobileMenu.classList.add('hidden');
-          }
-        });
-      }
-    })();
-  </script>
+  <script src="/assets/js/script.js"></script>
 </body>
-
 </html>

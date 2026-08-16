@@ -1,1 +1,177 @@
 @import "tailwindcss";
+@source "../*.html";
+@source "../blogs/*.html";
+@source "../pages/*.html";
+
+@theme {
+  --color-paper: #EDEEE4;
+  --color-paper-raised: #F8F8F2;
+  --color-ink: #172033;
+  --color-ink-soft: #4B5566;
+  --color-stamp: #D42A3C;
+  --color-stamp-dark: #A31D2C;
+  --color-seal: #E0A526;
+  --color-verify: #1F9D66;
+  --color-info: #2E55D6;
+  --color-violet: #7C3AED;
+  --color-teal: #0E9488;
+  --color-line: #D8D4C4;
+  --color-mist70: #ADB0AF;
+  --color-mist60: #979C9D;
+  --color-mist40: #6D727A;
+  --color-mist10: #2C3545;
+  --color-line-hover: #E0DED1;
+  --color-stamp-faint: #F0A9AE;
+  --color-stamp-faint2: #E88890;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Public Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Soft multi-tone backdrop instead of a flat paper fill */
+body {
+  background-color: #EDEEE4;
+  background-image:
+    radial-gradient(circle at 8% 8%, rgba(212,42,60,0.06), transparent 32%),
+    radial-gradient(circle at 92% 18%, rgba(46,85,214,0.06), transparent 34%),
+    radial-gradient(circle at 50% 95%, rgba(14,148,136,0.06), transparent 38%);
+  background-attachment: fixed;
+}
+
+.crop-marks {
+  position: relative;
+}
+.crop-marks::before,
+.crop-marks::after,
+.crop-marks .corner-tl,
+.crop-marks .corner-tr,
+.crop-marks .corner-bl,
+.crop-marks .corner-br {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: currentColor;
+  pointer-events: none;
+}
+.crop-marks::before { top: -2px; left: -2px; border-top: 3px solid; border-left: 3px solid; }
+.crop-marks::after { bottom: -2px; right: -2px; border-bottom: 3px solid; border-right: 3px solid; }
+.crop-marks .corner-tr { top: -2px; right: -2px; border-top: 3px solid; border-right: 3px solid; }
+.crop-marks .corner-bl { bottom: -2px; left: -2px; border-bottom: 3px solid; border-left: 3px solid; }
+
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.spec-number {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+.loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #172033;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* ---------- Color pass: richer, multi-hue accents ---------- */
+
+/* Primary CTAs get a warm gradient instead of a flat fill */
+.bg-stamp {
+  background-image: linear-gradient(135deg, var(--color-stamp), #F0672E 60%, var(--color-seal));
+}
+
+/* Top nav: a thin multi-color band under the bar, like a letterhead rule */
+nav.sticky {
+  position: relative;
+}
+nav.sticky::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -3px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-stamp), var(--color-seal), var(--color-teal), var(--color-info));
+}
+
+/* Footer: deep gradient instead of flat ink */
+footer.bg-ink,
+footer {
+  background-image: radial-gradient(circle at 15% 0%, #1F2B49, var(--color-ink) 55%),
+                     linear-gradient(160deg, var(--color-ink), #241a3a 140%);
+}
+
+/* "Why this exists" dark section: richer gradient + 4-color rotating accents */
+#whyus {
+  background-image: linear-gradient(135deg, var(--color-ink) 0%, #1c2c4a 55%, #22203f 100%);
+}
+#whyus .grid > div:nth-child(1) h3 { color: #FF9E7A; }
+#whyus .grid > div:nth-child(2) h3 { color: #F7C948; }
+#whyus .grid > div:nth-child(3) h3 { color: #5FE0BE; }
+#whyus .grid > div:nth-child(4) h3 { color: #8DB4FF; }
+
+/* "Three steps" process numbers: cycle through the accent family */
+#howto .grid > div:nth-child(1) .spec-number { color: var(--color-stamp); }
+#howto .grid > div:nth-child(2) .spec-number { color: var(--color-teal); }
+#howto .grid > div:nth-child(3) .spec-number { color: var(--color-info); }
+
+/* NSDL vs UTI preset toggle: distinct portal colors even while both use the same utility classes */
+#presetNsdl.bg-ink {
+  background-image: linear-gradient(135deg, var(--color-info), #1c3aa8);
+  border-color: var(--color-info) !important;
+}
+#presetUti.bg-ink {
+  background-image: linear-gradient(135deg, var(--color-stamp), var(--color-seal));
+  border-color: var(--color-stamp) !important;
+}
+
+/* FAQ accordions: rotate the +/x accent color down the list */
+#faq details:nth-of-type(6n+1) summary span,
+#faq details:nth-of-type(6n+1) .eyebrow { color: var(--color-stamp); }
+#faq details:nth-of-type(6n+2) summary span { color: var(--color-info); }
+#faq details:nth-of-type(6n+3) summary span { color: var(--color-teal); }
+#faq details:nth-of-type(6n+4) summary span { color: var(--color-violet); }
+#faq details:nth-of-type(6n+5) summary span { color: var(--color-seal); }
+#faq details:nth-of-type(6n+6) summary span { color: var(--color-verify); }
+
+/* Guide / blog cards: rotate the "Guide" eyebrow tag and corner-mark color */
+#blogPreview .grid > a:nth-child(1),
+#guideGrid > a:nth-child(6n+1) { color: var(--color-stamp); }
+#blogPreview .grid > a:nth-child(1) .eyebrow,
+#guideGrid > a:nth-child(6n+1) .eyebrow { color: var(--color-stamp); }
+#blogPreview .grid > a:nth-child(2),
+#guideGrid > a:nth-child(6n+2) { color: var(--color-info); }
+#blogPreview .grid > a:nth-child(2) .eyebrow,
+#guideGrid > a:nth-child(6n+2) .eyebrow { color: var(--color-info); }
+#blogPreview .grid > a:nth-child(3),
+#guideGrid > a:nth-child(6n+3) { color: var(--color-teal); }
+#blogPreview .grid > a:nth-child(3) .eyebrow,
+#guideGrid > a:nth-child(6n+3) .eyebrow { color: var(--color-teal); }
+#guideGrid > a:nth-child(6n+4) { color: var(--color-violet); }
+#guideGrid > a:nth-child(6n+4) .eyebrow { color: var(--color-violet); }
+#guideGrid > a:nth-child(6n+5) { color: var(--color-seal); }
+#guideGrid > a:nth-child(6n+5) .eyebrow { color: var(--color-seal); }
+#guideGrid > a:nth-child(6n+6) { color: var(--color-verify); }
+#guideGrid > a:nth-child(6n+6) .eyebrow { color: var(--color-verify); }
+
+/* Hero spec card: warm gradient surface instead of flat paper-raised */
+#heroSpec {
+  background-image: linear-gradient(160deg, var(--color-paper-raised), #FBF0E4 120%);
+}
+
+/* Prose headings on article/legal pages: alternating colored rule, no HTML changes needed */
+.prose-content h2:nth-of-type(odd) { border-left: 3px solid var(--color-stamp); padding-left: 0.75rem; margin-left: -0.9rem; }
+.prose-content h2:nth-of-type(even) { border-left: 3px solid var(--color-teal); padding-left: 0.75rem; margin-left: -0.9rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+

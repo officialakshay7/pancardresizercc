@@ -1,62 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://pancardresizer.cc/</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/uti-pan-card-resizer</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/nsdl-pan-card-resizer</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/blogs/how-to-resize-pan-card-for-uti</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/blogs/how-to-resize-pan-card-for-nsdl</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/pages/about</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/pages/contact</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/pages/privacy</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/pages/terms</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://pancardresizer.cc/pages/disclaimer</loc>
-  <lastmod>2026-03-27T13:14:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://pancardresizer.cc/</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://pancardresizer.cc/uti-pan-card-resizer</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pancardresizer.cc/nsdl-pan-card-resizer</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/how-to-resize-pan-card-for-uti</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/how-to-resize-pan-card-for-nsdl</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/nsdl-vs-uti-pan-card-difference</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/pan-card-photo-rejected-reasons</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/compress-pan-card-photo-under-kb</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/jpeg-vs-png-pan-card-photo</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/blogs/pan-card-photo-guidelines</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pancardresizer.cc/pages/about</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pancardresizer.cc/pages/contact</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pancardresizer.cc/pages/privacy</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://pancardresizer.cc/pages/terms</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://pancardresizer.cc/pages/disclaimer</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
